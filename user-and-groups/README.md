@@ -1,43 +1,39 @@
-# Project 02 - User & Group Management
+# User & Group Management
 
-## Environment
+## Overview
 
-- Ubuntu 24.04.4 LTS
-- Oracle VirtualBox
-- Bash
+This project demonstrates Linux user and group administration by creating department groups, managing user accounts, assigning group memberships and configuring secure directory permissions using `chown`, `chmod`, SGID and Sticky Bit. Access control was verified to ensure users could only access authorized resources.
 
-## Configuration
-
-- Created department groups
-- Created user accounts and home directories
-- Assigned users to department groups
-- Configured directory ownership with `chown`
-- Configured permissions with `chmod`
-- Implemented SGID for shared directories
-- Configured Sticky Bit for a shared workspace
-- Verified user access and permission enforcement
-
-## Technologies
-
-- Ubuntu Linux
-- Bash
-- User & Group Management
-- Linux File Permissions
+---
 
 ## Screenshots
 
 ### Group Verification
 
-![Group Verification](screenshots/01-user-group-management-group-verification.png)
+Shows the department groups, user accounts and group memberships configured on the Linux server.
+
+![Group Verification](screenshots/01-user-group-manag-groups-verification.png)
+
+---
 
 ### Directory Permissions
 
-![Directory Permissions](screenshots/02-user-group-management-directory-permissions.png)
+Shows the department directory structure, ownership and Linux file permissions configured using `chown` and `chmod`.
+
+![Directory Permissions](screenshots/02-user-group-manag-permissions.png)
+
+---
 
 ### SGID Verification
 
-![SGID Verification](screenshots/03-user-group-management-sgid-verification.png)
+Shows SGID configured on department directories, ensuring new files inherit the parent directory's group ownership.
+
+![SGID Verification](screenshots/03-user-group-manag-sgid.png)
+
+---
 
 ### Sticky Bit Verification
 
-![Sticky Bit Verification](screenshots/04-user-group-management-sticky-bit-verification.png)
+Shows the shared directory configured with the Sticky Bit, allowing users to create files while preventing them from deleting files owned by other users.
+
+![Sticky Bit Verification](screenshots/04-user-group-manag-sticky-bit.png)
