@@ -1,8 +1,4 @@
-SSH Server Configuration
-
-## Overview
-
-This project demonstrates the installation, configuration and management of an OpenSSH Server on Ubuntu Linux. The server was configured to accept secure remote connections, the default SSH port was changed from 22 to 2222 and remote administration from a Windows client was successfully verified.
+# SSH Server Configuration
 
 ---
 
@@ -12,7 +8,7 @@ This project demonstrates the installation, configuration and management of an O
 
 OpenSSH Server was successfully installed on Ubuntu, enabling secure remote administration capabilities.
 
-![SSH Server Installation](screenshots/01-linux-ssh-server-installation.png)
+![SSH Server Installation](screenshots/01-lnx-ssh-installed.png)
 
 ---
 
@@ -20,29 +16,28 @@ OpenSSH Server was successfully installed on Ubuntu, enabling secure remote admi
 
 Verified that the SSH service was running correctly and accepting connections on the default SSH port (22).
 
-![SSH Service Status](screenshots/02-linux-ssh-server-service-status.png)
+![SSH Service Status](screenshots/02-lnx-ssh-listening-port-22.png)
 
 ---
 
-### SSH Configuration
+### SSH Configuration Update
 
-The SSH server configuration file (`sshd_config`) was updated to customize the server configuration and change the listening port.
+The SSH server configuration file (`sshd_config`) was updated to change the default SSH listening port.
 
-![SSH Configuration](screenshots/03-linux-ssh-server-configuration.png)
-
----
-
-### SSH Port Verification
-
-Confirmed that the SSH service was successfully listening on the new custom port (2222), proving that the configuration changes were applied correctly.
-
-![SSH Port Verification](screenshots/04-linux-ssh-server-port-2222-verification.png)
+![SSH Configuration Update](screenshots/03-lnx-ssh-config-file-updated.png)
 
 ---
 
-### Remote Login from Windows
+### Custom SSH Port Verification
 
-Successfully established a secure SSH connection from a Windows client to the Ubuntu server using the custom SSH port (2222), confirming end-to-end remote administration.
+Confirmed that the SSH service was successfully listening on the new custom port (2222), proving the configuration changes were applied successfully.
 
-![Remote Login from Windows](screenshots/05-linux-ssh-server-remote-login-from-windows.png)
+![Custom SSH Port Verification](screenshots/04-lnx-ssh-listening-port-changed-to-2222.png)
 
+---
+
+### Remote SSH Access from Windows
+
+Successfully established a secure SSH connection from a Windows client to the Ubuntu server using the custom SSH port (2222), confirming successful remote administration.
+
+![Remote SSH Access from Windows](screenshots/05-lnx-ssh-server-remote-access-on-windows.png)
