@@ -18,7 +18,7 @@ Verified that Nginx is listening for HTTP connections on TCP port 80.
 
 ## Local Web Server Test
 
-Tested the Nginx web server locally using `curl` and confirmed that the default web page was being served successfully.
+Tested the Nginx web server locally using `curl` and confirmed that the web server was responding successfully.
 
 ![Local Web Page Test](screenshots/03-lnx-nginx-local-webpage-test.png)
 
@@ -26,7 +26,7 @@ Tested the Nginx web server locally using `curl` and confirmed that the default 
 
 ## Custom Web Page
 
-Created and deployed a custom HTML page on the Linux server and configured Nginx to serve the page.
+Created a custom HTML page for the Linux server and configured the web content to be served through Nginx.
 
 ![Custom Web Page](screenshots/04-lnx-nginx-custom-web-page.png)
 
@@ -66,6 +66,6 @@ Accessed the server from a web browser using its IP address and verified that th
 
 ## Nginx Access and Error Logs
 
-Reviewed the Nginx access and error logs to verify client requests and monitor server activity.
+Reviewed the Nginx access and error logs to verify client requests and monitor web server activity.
 
 ![Nginx Access and Error Logs](screenshots/09-lnx-nginx-access-and-error-logs.png)
